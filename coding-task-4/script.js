@@ -13,8 +13,8 @@ console.log(getUserNameLength(userName) > 4)
 let userName = "Brad";
 userName = "Jenna";
 
-function getUserNameLength() {
-  return (result = userName.length);
+function getUserNameLength(secondName) {
+  return secondName.length;
 }
 
 console.log(getUserNameLength(userName) > 4);
@@ -25,9 +25,9 @@ console.log(getUserNameLength(userName) > 4);
 
 // TODO: Implement the isString function
 
-const isString = function (data) {
-  return typeof data === "string";
-};
+function isString(data) {
+  return typeof data == "string";
+}
 
 console.log(isString("Hello"));
 // result should be true
