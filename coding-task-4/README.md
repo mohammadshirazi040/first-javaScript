@@ -1,4 +1,8 @@
-/*
+## 01) Spot the errors and fix them
+
+- [x] Copy the following complete code block to your script.js file and try to spot and fix the errors.
+
+```js
 const userName = Brad;
 userName = "Jenna";
 
@@ -8,26 +12,18 @@ function getUserNameLength {
 
 console.log(getUserNameLength(userName) > 4)
 // ^______________ Should log true
-*/
+```
 
-let userName = "Brad";
-userName = "Jenna";
+## 02) isString function
 
-function getUserNameLength() {
-  return (result = userName.length);
-}
+Implement a `isString` function.
 
-console.log(getUserNameLength(userName) > 4);
+- [x] The function has one parameter which could be any kind of data type
+- [x] The function is written as a function expression
+- [x] The function returns a boolean. It returns only true, when the data type is a string otherwise it will return false
 
-// ^______________ Should log true
-
-//============================================
-
+```js
 // TODO: Implement the isString function
-
-const isString = function (data) {
-  return typeof data === "string";
-};
 
 console.log(isString("Hello"));
 // result should be true
@@ -43,3 +39,4 @@ console.log(isString(""));
 
 console.log(isString("John" + "Doe"));
 // result should be true
+```
