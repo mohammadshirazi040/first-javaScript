@@ -35,3 +35,31 @@ console.log(oddEven(-1));
 
 console.log(oddEven(10));
 // result should be even
+
+/* ================== */
+
+// TODO: Implement the oldYoung function
+
+function oldYoung(num) {
+  if (typeof num !== "number" || num < 0) {
+    return "invalid parameter";
+  } else if (num < 16) {
+    return "children";
+  } else if (num < 50) {
+    return "young person";
+  } else {
+    return "elder person";
+  }
+}
+
+console.log(oldYoung(27));
+// result should be young person
+
+console.log(oldYoung(6));
+// result should be children
+
+console.log(oldYoung(-1));
+// result should be invalid parameter
+
+console.log(oldYoung(86));
+// result should be elder person
